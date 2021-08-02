@@ -1,2 +1,74 @@
-.logo{
-    filter:invert(100%)}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-fonts {
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.navbar-links {
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+  color: white;
+  border-bottom: 2px solid #006cca00;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.navbar-links:hover {
+  color: #2b6e73 !important;
+  border-bottom: 2px solid #2b6e73;
+  text-shadow: 0 0 black;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+.nav-active {
+  color: #2b6e73 !important;
+  border-bottom: 2px solid #2b6e73;
+  text-shadow: 0 0 black;
+}
+
+.logo,
+.filter-svg {
+  filter: invert(100%);
+}
+
+.primary-bg-color1 {
+  background-color: #000000 !important;
+}
+.primary-bg-color2 {
+  background-color: white;
+}
+.primary-bg-color3 {
+  background-color: tomato;
+}
+
+.navcontent-right {
+  justify-content: flex-end !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navcontent-right {
+    justify-content: flex-start !important;
+  }
+}
+
+/* 
+===========================================================================
+footer css
+=========================================================================== */
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}

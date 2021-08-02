@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import "./home.css";
 
 const Main = () => {
-  const [res, setRes] = useState("");
-  const apidata = async () => {
-    const responce = await fetch("/nodejs");
-    const data = await responce.json();
-    console.log(data);
-    setRes(data);
-  };
-
-  useEffect(() => {
-    apidata();
-  }, []);
   return (
     <>
-      <h1>hi</h1>
-      <h1>{res}</h1>
+      <div className="container-fluid home-main">
+        <div className="home-slogan">
+          <h1 className="fs-1 fw-bold">Explore The World</h1>
+          <p className="fs-4">
+            Sometime you Will never know the VALUE of a moment,until it becomes
+            a MEMORY!
+          </p>
+        </div>
+      </div>
     </>
   );
 };

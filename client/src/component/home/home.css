@@ -1,0 +1,172 @@
+.home-main {
+  height: 700px;
+  width: 100%;
+  background: url(../../image/home/home-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-slogan {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-slogan h1,
+p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* ==============================================================================================
+==============================================================================================
+                          timeline-css strat                                                  
+==============================================================================================
+=============================================================================================                           */
+
+.timeline {
+  height: 100%;
+  width: 100%;
+}
+.main-timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-timeline .timeline {
+  width: calc(50% + 200px);
+  margin: 0 0 25px 5px;
+  float: right;
+}
+.main-timeline .timeline-content {
+  color: #555;
+  background: #fff;
+  padding: 15px 15px 15px 290px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.main-timeline .timeline-content:hover {
+  text-decoration: none;
+}
+.main-timeline .timeline-content:before {
+  content: "";
+  background-color: #00a7fb;
+  height: 100%;
+  width: 120px;
+  position: absolute;
+  left: 140px;
+  top: 0;
+}
+.main-timeline .timeline-year {
+  color: #00a7fb;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 43px;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 22px;
+  top: 50%;
+}
+.main-timeline .timeline-icon {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  width: 120px;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 140px;
+  top: 50%;
+}
+.main-timeline .title {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 0 7px;
+}
+.main-timeline .description {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.main-timeline .timeline:nth-child(even) {
+  margin: 0 5px 25px 0;
+  float: left;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content {
+  padding: 15px 280px 15px 20px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:before {
+  left: auto;
+  right: 139px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year {
+  left: auto;
+  right: 19px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+  left: auto;
+  right: 139px;
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-content:before {
+  background-color: #ff3e7d;
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-year {
+  color: #ff3e7d;
+}
+.main-timeline .timeline:nth-child(4n + 3) .timeline-content:before {
+  background-color: #7338ba;
+}
+.main-timeline .timeline:nth-child(4n + 3) .timeline-year {
+  color: #7338ba;
+}
+.main-timeline .timeline:nth-child(4n + 4) .timeline-content:before {
+  background-color: #ff9800;
+}
+.main-timeline .timeline:nth-child(4n + 4) .timeline-year {
+  color: #ff9800;
+}
+@media screen and (max-width: 767px) {
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even) {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .main-timeline .timeline-content,
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+    text-align: center;
+    padding: 200px 15px 15px 15px;
+  }
+  .main-timeline .timeline-content:before,
+  .main-timeline .timeline:nth-child(even) .timeline-content:before {
+    width: 100%;
+    height: 100px;
+    transform: translateX(-50%) translateY(0);
+    left: 50%;
+    right: auto;
+    top: 80px;
+  }
+  .main-timeline .timeline-year,
+  .main-timeline .timeline:nth-child(even) .timeline-year {
+    transform: translateY(0) translateX(-50%);
+    left: 50%;
+    right: auto;
+    top: 20px;
+  }
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    width: auto;
+    transform: translateY(0) translateX(-50%);
+    left: 50%;
+    right: auto;
+    top: 105px;
+  }
+}
