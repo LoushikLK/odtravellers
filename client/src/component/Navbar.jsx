@@ -13,7 +13,7 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-main py-2 primary-bg-color1 px-3">
                 <div className="container-fluid ">
-                    <NavLink className="navbar-brand fs-1 text-white nav-fonts display-3" to="/">OrdinaryTravellers</NavLink>
+                    <NavLink className="navbar-brand fs-1 nav-title nav-fonts display-3" to="/">OrdinaryTravellers</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">

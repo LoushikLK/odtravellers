@@ -1,12 +1,11 @@
 import React from "react";
-import img from "../../image/home/cmn1.jpg";
 import "./common.css";
 
-const Commoncard = () => {
+const Commoncard = (props) => {
     return (
         <>
             <div className="col-md-4">
-                <img src={img} className="img-fluid rounded-start" alt="images" />
+                <img src={props.image} className="img-fluid rounded" alt="images" />
             </div>
 
         </>

@@ -13,12 +13,12 @@ app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 5000
 
+const homeTemplate = require('./routes/hometemplate')
+
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, './client/build')));
 
-app.get('/nodejs', (req, res) => {
-    res.json('hello world from node js')
-})
+app.use('/templatedata', homeTemplate)
 
 
 app.get('*', (req, res) => {

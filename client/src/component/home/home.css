@@ -1,10 +1,15 @@
+.home-container {
+  background-color: black !important;
+}
 .home-main {
+  min-height: 100vh;
   height: 700px;
   width: 100%;
-  background: url(../../image/home/home-main.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .home-slogan {
   display: flex;
@@ -15,8 +20,7 @@
   justify-content: center;
   align-items: center;
 }
-.home-slogan h1,
-p {
+.home-slogan h1 {
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -27,9 +31,18 @@ p {
 ==============================================================================================
 =============================================================================================                           */
 
+.card-img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
 .timeline {
   height: 100%;
   width: 100%;
+}
+.fonts {
+  font-family: "Vollkorn", serif;
+  font-size: 10rem;
 }
 .main-timeline:after {
   content: "";

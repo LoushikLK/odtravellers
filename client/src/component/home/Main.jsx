@@ -1,15 +1,16 @@
 import React from "react";
 import "./home.css";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <>
-      <div className="container-fluid home-main">
+      <div className="container-fluid home-main" style={props.mainStyle}>
         <div className="home-slogan">
-          <h1 className="fs-1 fw-bold">Explore The World</h1>
-          <p className="fs-4">
-            Sometime you Will never know the VALUE of a moment,until it becomes
-            a MEMORY!
+          <img src={props.img} className="img-fluid rounded" alt="Ordinary Travellers" />
+          <h1 className="fs-1 fw-bold" style={props.style}>
+            {props.title}
+          </h1>
+          <p className="mx-5 fst-italic fs-5">{props.content}
           </p>
         </div>
       </div>

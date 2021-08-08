@@ -1,0 +1,120 @@
+.about-card {
+  background-color: #000;
+  border: 2px dotted red;
+  width: 30%;
+  height: auto;
+}
+.about-details {
+  background-color: #000;
+}
+.about {
+  cursor: pointer;
+  background-color: #07866e;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.about h1 {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.about h2 {
+  opacity: 0.8;
+}
+.about span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #ffffff;
+  opacity: 0.7;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+
+  /* webkit-transition:all .5s ease;
+ 	moz-transition:all .5s ease;
+ 	os-transition:all .5s ease; */
+  transition: all 0.5s ease;
+}
+.about-item:hover span {
+  opacity: 1;
+  border: 2px solid #07866e;
+  font-size: 42px;
+  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+  -moz-transform: scale(1.1, 1.1) rotate(360deg);
+  -o-transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1) rotate(360deg);
+}
+.about-item:hover h2 {
+  opacity: 1;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.about .lead {
+  color: #07866e;
+  font-size: 14px;
+  font-weight: bold;
+}
+.aboutlink > img {
+  vertical-align: sub;
+}
+/* about page css ends */
+.profilebox {
+  display: flex !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .profilebox {
+    width: 100%;
+    display: block !important;
+  }
+  .aboutcontainer {
+    padding: 0px !important;
+  }
+}
+
+.aboutbutton,
+.card-texts,
+.card-title {
+  font-family: "Vollkorn", serif;
+}
+.aboutcontainer {
+  padding: 30px;
+}
+
+.aboutcard {
+  width: 20rem;
+  border-top-right-radius: 10px 10px;
+  border-top-left-radius: 50px 50px;
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 50px 50px;
+  box-shadow: 2px 2px 15px 2px #ccc;
+}
+
+.aboutimg {
+  border-top-right-radius: 5px 5px;
+  border-top-left-radius: 50px 50px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.aboutbutton {
+  transition: 0.8s ease;
+  background-color: #0082fe;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2rem;
+}
+
+.aboutbutton:hover {
+  transition: 0.8s ease;
+  border-color: #0082fe;
+  background-color: #fff;
+  color: #0082fe;
+  font-size: 14px;
+}

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
-import timelinedata from "./timelinedata";
+// import timelinedata from "./timelinedata";
 const Timelinecard = () => {
+  const [timelinedata, setTimelinedata] = useState([])
+
+  const fetchdata = async () => {
+    let templatedata = await fetch("/templatedata")
+    let data = await templatedata.json()
+    console.log(data)
+    return setTimelinedata(data)
+  }
+
+  useEffect(() => {
+
+    fetchdata()
+
+  }, [])
+
+
   return (
     <>
       <div className="main-timeline">
@@ -18,18 +34,22 @@ const Timelinecard = () => {
 
         {timelinedata.map((value, index) => {
           return (
-            <div className="timeline">
-              <div className="timeline-content ">
-                <img src={value.imagesrc} alt="image" key={index} />
+            <div className="timeline" key={index}>
+              <div className="timeline-content">
                 <div className="timeline-year "> {value.date}</div>
-                <h3 className="title text-dark d-flex justify-content-center fonts">
+                <h3 className="title text-dark d-flex justify-content-center fonts fs-1">
                   {value.place}
                 </h3>
+                <img
+                  src={value.imagesrc}
+                  alt="visited place"
+                  className="card-img"
+                />
                 <p className="description text-dark fw-bold">
-                  {value.about}{" "}
+                  {value.about}
                   <a href={value.link} className="text-danger">
                     more...
-                  </a>{" "}
+                  </a>
                 </p>
               </div>
             </div>

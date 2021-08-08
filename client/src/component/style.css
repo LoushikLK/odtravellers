@@ -7,9 +7,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.nav-title {
+  color: rgb(34, 187, 136) !important;
+}
+
 .nav-fonts {
   font-family: "Vollkorn", serif;
-  font-size: 20px;
   color: white;
   text-shadow: 1px 1px 1px #000000;
 }
@@ -24,14 +27,14 @@
 }
 
 .navbar-links:hover {
-  color: #2b6e73 !important;
-  border-bottom: 2px solid #2b6e73;
+  color: rgb(34, 187, 136) !important;
+  border-bottom: 2px solid rgb(34, 187, 136);
   text-shadow: 0 0 black;
   transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
 }
 .nav-active {
-  color: #2b6e73 !important;
-  border-bottom: 2px solid #2b6e73;
+  color: rgb(34, 187, 136) !important;
+  border-bottom: 2px solid rgb(34, 187, 136);
   text-shadow: 0 0 black;
 }
 
