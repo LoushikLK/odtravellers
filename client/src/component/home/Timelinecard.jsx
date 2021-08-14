@@ -5,10 +5,17 @@ const Timelinecard = () => {
   const [timelinedata, setTimelinedata] = useState([])
 
   const fetchdata = async () => {
-    let templatedata = await fetch("/templatedata")
-    let data = await templatedata.json()
-    console.log(data)
-    return setTimelinedata(data)
+
+    try {
+
+      let templatedata = await fetch("/templatedata")
+      let data = await templatedata.json()
+      console.log(data)
+      return setTimelinedata(data)
+    }
+    catch (error) {
+      console.log('error')
+    }
   }
 
   useEffect(() => {

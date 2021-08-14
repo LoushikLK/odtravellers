@@ -13,7 +13,7 @@ app.use(cookieParser());
 require('../dbmodule/mongooseConnect')
 const adminlog = require('../dbmodule/adminlog');
 const router = require('../routes/admin');
-const SECRET_KEY = process.env.SECRET_KEY || "LOUSHIKGIRIBUILDTHISWITHREACTJS"
+const SECRET_KEY = process.env.SECRET_KEY
 
 
 const login = async (req, res, next) => {

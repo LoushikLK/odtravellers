@@ -12,6 +12,10 @@
 # production
 /build
 
+
+
+
+/imagedata.jsx
 # misc
 .DS_Store
 .env.local

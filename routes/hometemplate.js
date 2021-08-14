@@ -19,12 +19,16 @@ require('../dbmodule/mongooseConnect')
 router.get('/', (req, res) => {
 
     homeApi.find(function (err, data) {
+        // console.log('lk')
+        if (err) {
+            return res.status(500)
+        }
 
-        if (err) return console.error(err);
+        if (data) {
 
-        // console.log(data + 'yes');
-
-        res.status(200).json(data)
+            // console.log(data);
+            res.status(200).json(data)
+        }
     });
 })
 

@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 
 require('../dbmodule/mongooseConnect')
 const adminlog = require('../dbmodule/adminlog')
-const SECRET_KEY = process.env.SECRET_KEY || "LOUSHIKGIRIBUILDTHISWITHREACTJS"
+const SECRET_KEY = process.env.SECRET_KEY
 
 //////work needed
 const auth = (req, res, next) => {
