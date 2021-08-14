@@ -48,7 +48,7 @@ const Timelinecard = () => {
                   {value.place}
                 </h3>
                 <img
-                  src={value.imagesrc}
+                  src={value.imgsrc}
                   alt="visited place"
                   className="card-img"
                 />
