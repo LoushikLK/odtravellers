@@ -15,7 +15,7 @@ function Routes() {
             <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/about" component={Aboutus} />
-                <Route path="/galarry" component={Gallery} />
+                <Route path="/gallery" component={Gallery} />
                 <Route component={ErrorPage} />
             </Switch>
         </main>

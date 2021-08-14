@@ -28,7 +28,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item">
-                                <NavLink className="nav-link navbar-links fs-4 nav-fonts" exact to="/galarry" activeClassName="nav-active"  >Gallary</NavLink>
+                                <NavLink className="nav-link navbar-links fs-4 nav-fonts" exact to="/gallery" activeClassName="nav-active"  >Gallery</NavLink>
                             </li>
 
                             <li className="nav-item">

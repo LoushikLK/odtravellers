@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "../home/Main";
+import Main from "../common/Main";
 import Profiles from "./Profiles";
 import "./about.css";
 import aboutimg from "../../image/about/about-title.png";
@@ -16,7 +16,6 @@ import pimg6 from "../../image/about/profiles/pimg6.jpg";
 import pimg7 from "../../image/about/profiles/pimg7.jpg";
 import pimg8 from "../../image/about/profiles/pimg8.jpg";
 import pimg9 from "../../image/about/profiles/pimg9.jpg";
-
 const style = {
   color: "rgb(33 193 140)",
   fontFamily: "Vollkorn",
@@ -58,8 +57,6 @@ function Aboutus() {
           desc="Main chutiya hoon + bhoot hoon"
           link="https://www.instagram.com/kumar_ritun/"
         />
-      </div>
-      <div className="profilebox m-auto">
         <Profiles
           imgsrc={pimg5}
           name="Subash"
@@ -84,8 +81,6 @@ function Aboutus() {
           desc="Main chutiya hoon"
           link="https://www.instagram.com/pranab_pk19/"
         />
-      </div>
-      <div className="profilebox m-auto">
         <Profiles
           imgsrc={pimg9}
           name="Sangram"
@@ -93,6 +88,7 @@ function Aboutus() {
           link="https://www.instagram.com/sangramnayaksangram/"
         />
       </div>
+
 
       <Commoncard2
         style={{ display: "flex", margin: "auto" }}

@@ -2,3 +2,26 @@
   border: none !important;
   background-color: black;
 }
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+}
+.main-slogan {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-slogan h1 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}

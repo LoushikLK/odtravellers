@@ -1,12 +1,14 @@
 import React from "react";
 import imagedata from "./imagedata";
 import "./gallery.css";
+import Main from "../common/Main";
 
+import img1 from "../../image/gallery/gallery.png"
 function Gallery() {
   document.title = "GALLERY";
   return (
     <>
-      <h1 className="text-center d-block nav-title fonts fs-1">Gallery</h1>
+      <Main img={img1} content="This is our Image gallery ,Everything from our Trip will be  posted here.Watch every amazing images taken by our photographer  here." />
       <div id="gallery" className="container-fluid">
         {imagedata.map((value, index) => {
           return (
