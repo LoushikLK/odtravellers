@@ -14,8 +14,8 @@ router.post('/upload', auth, (req, res) => {
     const uploaddata = new uploadApi({
         imageurl: req.body.imageurl,
         imagedate: req.body.imagedate,
-        placename: req.body.placename,
-        statename: req.body.statename
+        placename: req.body.placename.toUpperCase(),
+        statename: req.body.statename.toUpperCase()
     })
     uploaddata.save().then(() => {
         res.status(200).json({ msg: 'Data Upload To Database Successfully Try Another' });
