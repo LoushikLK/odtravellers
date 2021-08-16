@@ -36,7 +36,7 @@ function Gallery() {
                 <img src={value.imageurl} alt="travel" />
               </a>
               <span className="imgdetail fonts nav-title">
-                Photo Taken On -{value.imagedate} | place:{value.placename} | country:{value.statename}
+                Photo Taken On -{value.imagedate} | place:{value.placename} | State:{value.statename}
 
               </span>
             </div>
