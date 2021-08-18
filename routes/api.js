@@ -18,7 +18,7 @@ router.post('/upload', auth, (req, res) => {
         statename: req.body.statename.toUpperCase()
     })
     uploaddata.save().then(() => {
-        res.status(200).json({ msg: 'Data Upload To Database Successfully Try Another' });
+        res.status(200).json({ msg: 'Data Uploaded To Database Successfully Try Another' });
     }).catch((err) => {
         res.status(400).json({ msg: err })
     })
