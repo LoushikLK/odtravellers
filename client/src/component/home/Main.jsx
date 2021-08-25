@@ -13,7 +13,7 @@ const Main = (props) => {
             className="img-fluid rounded"
             alt="Ordinary Travellers"
           />
-          <h1 className="fs-1 fw-bold fst-italic" style={props.style}>
+          <h1 className="fs-1 fw-bold fst-italic fonts" style={props.style}>
             {props.title}
           </h1>
           <p className="mx-5 fst-italic fs-4 nav-fonts text-center fw-bold">
