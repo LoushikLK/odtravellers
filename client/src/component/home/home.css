@@ -39,9 +39,9 @@
 }
 .fonts {
   font-family: "Vollkorn", serif;
-  font-size: 10rem;
+  font-size: 8rem;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
   .fonts {
     font-size: 2rem;
   }
